@@ -16,6 +16,7 @@ h1 {
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
     margin: 20px auto;
+    text-align: center;
 }
 
 .cell {
@@ -29,13 +30,16 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
 }
 
 .cell.taken {
+    text-align: center;
     cursor: not-allowed;
 }
 
 button {
+    text-align: center;
     margin: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -46,5 +50,6 @@ button {
 }
 
 button:hover {
+    text-align: center;
     background-color: #555;
 }
