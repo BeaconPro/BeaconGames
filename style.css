@@ -1,0 +1,25 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+canvas {
+  border: 2px solid white;
+}
