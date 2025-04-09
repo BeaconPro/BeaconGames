@@ -20,6 +20,7 @@ h1 {
 }
 
 .cell {
+    text-align: center;
     width: 100px;
     height: 100px;
     background-color: #fff;
