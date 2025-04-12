@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play a fun game of Tic-Tac-Toe. Simple, intuitive, and responsive design.">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="tictactoe.css">
-    <link rel="icon" href="BeaconGames logo.png">
+    <link rel="icon" href="BeaconGames logo.png" type="image/png">
 </head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <div id="board">
-        <!-- Game cells -->
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-    </div>
-    <h2 id="status"></h2>
-    <button id="restart">Restart</button>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    
+    <main>
+        <section id="game">
+            <!-- Game board -->
+            <div id="board" role="grid" aria-label="Tic-Tac-Toe Board">
+                <!-- Game cells -->
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+                <div class="cell" data-cell role="gridcell" aria-label="Empty"></div>
+            </div>
+
+            <!-- Game status -->
+            <h2 id="status" aria-live="polite">Player X's turn</h2>
+
+            <!-- Restart button -->
+            <button id="restart" type="button" aria-label="Restart the game">Restart</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 BeaconGames. All rights reserved.</p>
+    </footer>
+
     <script src="tictactoe.js"></script>
 </body>
 </html>
