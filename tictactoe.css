@@ -1,26 +1,31 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333; /* Ensures consistent text color */
 }
 
+/* Heading styles */
 h1 {
     color: #333;
+    margin-top: 20px; /* Adds spacing above the heading */
 }
 
+/* Board container */
 #board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px; /* Increased for better spacing between cells */
     margin: 20px auto;
-    text-align: center;
+    width: max-content; /* Ensures grid is centered horizontally */
 }
 
+/* Individual cell styles */
 .cell {
-    text-align: center;
     width: 100px;
     height: 100px;
     background-color: #fff;
@@ -31,16 +36,22 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-align: center;
+    transition: background-color 0.3s ease; /* Adds hover effect smoothness */
 }
 
+.cell:hover:not(.taken) {
+    background-color: #f0f0f0; /* Subtle hover effect for untaken cells */
+}
+
+/* Style for already taken cells */
 .cell.taken {
-    text-align: center;
     cursor: not-allowed;
+    background-color: #e0e0e0; /* Different background to indicate taken state */
+    color: #999; /* Light text color for taken cells */
 }
 
+/* Button styling */
 button {
-    text-align: center;
     margin: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -48,9 +59,10 @@ button {
     background-color: #333;
     color: #fff;
     cursor: pointer;
+    border-radius: 5px; /* Adds rounded corners for better aesthetics */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 button:hover {
-    text-align: center;
     background-color: #555;
 }
