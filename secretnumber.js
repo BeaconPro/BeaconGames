@@ -39,7 +39,7 @@ restartButton.addEventListener("click", () => {
     guessInput.value = "";
     checkButton.disabled = false;
 });
-function revealAnswer {
+function revealAnswer() {
     message.textContent = `The answer is ${secretNumber}. Better luck next time!`;
     message.style.color = "red";
     attempts = 0;
