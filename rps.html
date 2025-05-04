@@ -56,5 +56,12 @@
         (playerChoice === 'scissors' && computerChoice === 'paper')
       ) {
         result = `You win! ${playerChoice} beats ${computerChoice}.`;
-      } else*
-
+      } else {
+        result = `You lose! ${computerChoice} beats ${playerChoice}.`;
+      }
+
+      document.getElementById('result').textContent = result;
+    }
+  </script>
+</body>
+</html>
